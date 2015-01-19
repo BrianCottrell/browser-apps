@@ -1,0 +1,39 @@
+/* Mini Browser Apps */
+/* by Brian Cottrell */
+/* 01-15-2015        */
+body{
+	background-color: rgb(30,125,30);
+}
+.app-container{
+	position: absolute;
+	width: 50%;
+	height: 92.6%;
+	margin-left: 25%;
+}
+.app-one{
+	background: url(app1.png);
+	margin-left: 27.5%;
+}
+.app-two{
+	background: url(app2.png);
+	margin-top: 47.6%;
+}
+.app-three{
+	background: url(app3.png);
+	margin-left: 55%;
+	margin-top: 47.6%;
+}
+.app{
+	position: absolute;
+	padding: 22.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 4px solid rgb(10,30,10);
+	border-radius: 50%;
+}
+.line{
+	position: absolute;
+	background-color: rgb(10,30,10);
+	border: 2px solid rgb(10,30,10);
+	z-index: -1;
+}
