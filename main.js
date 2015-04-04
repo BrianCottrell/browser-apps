@@ -22,15 +22,16 @@ function drawLine(container, point1x, point1y, point2x, point2y){
 	line.style.webkitTransform = 'rotate('+rotation+'rad)';
 	container.appendChild(line);
 }
+//Draw a triangle the connects each app element
 drawLine(document.getElementsByClassName('app-container')[0], 50, 72.5, 77.5, 120.1);
 drawLine(document.getElementsByClassName('app-container')[0], 50, 72.5, 22.5, 120.1);
 drawLine(document.getElementsByClassName('app-container')[0], 22.5, 120.1, 77.5, 120.1);
-
+//An array of functions to redierect to the website of each app element
 var redirect = [
 	function(){window.location.href = 'http://briancottrell.github.io/memory-game';},
 	function(){window.location.href = 'http://briancottrell.github.io/minesweeper';},
 	function(){window.location.href = 'http://briancottrell.github.io/paint-box';}];
-
+//Add event listeners to each app element
 for(var i = 0; i < document.getElementsByClassName('app').length; i++){
 	document.getElementsByClassName('app')[i].addEventListener('click', redirect[i]);
 }
